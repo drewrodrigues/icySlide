@@ -1,0 +1,297 @@
+/*************************************
+			BASE STYLES
+*************************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.6;
+}
+
+.cont {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#info, #contact, #use, #update {
+	padding: 50px;
+}
+/*************************************
+			GRID ELEMENTS
+*************************************/
+.oneFourth {
+	float: left;
+	width: 25%;
+}
+.threeFourth {
+	float: left;
+	width: 75%;
+}
+.clear:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+#me {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+/*************************************
+			SPECIFIC ELEMENTS
+*************************************/
+#button {
+	color: white;
+	display: inline-block;
+	background: #3498db;
+	padding: 10px;
+}
+
+#arrow {
+	display: block;
+	margin-top: 20px;
+}
+
+#docu {
+	margin: 0 auto;
+}
+
+.boxes {
+	/*background: white;*/
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 500px;
+}
+
+.boxes:last-child {
+	margin-bottom: 20px;
+}
+
+.boxes ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	list-style-position: inside;
+	background: white;
+	padding: 20px;
+}
+
+.boxes ol.second {
+	margin-bottom: 10px;
+}
+
+.toggle {
+	/*display: none;*/
+}
+/*************************************
+			 AREA STYLES
+*************************************/
+#fullGallery {
+	background-image: url('1.jpg');
+	/*background-attachment: fixed;*/
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: cover;
+	text-align: center;
+	padding: 250px 100px;
+}
+
+#contact {
+	border-bottom: 10px dashed white;
+}
+
+#preload {
+	display: none;
+}
+
+#update li {
+	list-style-type: circle;
+	list-style-position: inside; 
+}
+
+#last {
+	margin-top: 20px;
+}
+/*************************************
+			 BACKGROUND STYLES
+*************************************/
+body {
+	background: #3498db;
+}
+
+#update {
+	background: white;
+}
+
+#use {
+	background: #2980b9;
+}
+
+ol.second {
+	background: black;
+	font-size: 10px;
+}
+/*************************************
+			FONT STYLES
+*************************************/
+.mHead {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#info {
+	/*text-align: center;*/
+}
+
+h1 {
+	color: #3498db;
+	font-size: 32px;
+	padding: 20px;
+	background: white;
+	border: 1px solid white;
+	display: inline-block;
+}
+
+#contact p {
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+#update li {
+	font-size: 14px;
+}
+
+#use p {
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#use h4 {
+	font-size: 14px;
+}
+
+#update h6 {
+	font-size: 14px;
+}
+
+.boxed {
+	color: white;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	word-wrap: break-word;
+}
+
+h6 {
+	margin-bottom: 10px;
+}
+/*************************************
+			COLOR STYLES
+*************************************/
+#info, #contact, #use h5 {
+	color: white;
+}
+
+
+#use h4 {
+	color: white;
+}
+
+#info h3 {
+	color: #2c3e50;
+}
+
+#update li {
+	color: #7f8c8d;;
+}
+
+#update h5, h6, #contact p {
+	color: #2c3e50;
+}
+
+#use h6 {
+	color: #2980b9;
+}
+
+h2 span {
+	color: #2980b9;
+}
+
+.boxes p {
+	color: #7f8c8d;
+}
+
+.boxes li {
+	color: white;
+}
+
+.boxes hr {
+	background: none;
+	border: 1px dashed #bdc3c7;
+	margin: 20px 0;
+}
+/*************************************
+			IMAGE STYLES
+*************************************/
+#info img {
+	border-radius: 100%;
+}
+
+.pass img {
+	width: 17px;
+	display: inline-block;
+	height: 17px;
+	float: none;
+}
+/*************************************
+			MEDIA Qs
+*************************************/
+@media (max-width: 700px) {
+	#fullGallery {
+		padding: 100px 20px;
+	}
+	#fullGallery h1 {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 580px) {
+	#fullGallery h1 {
+		font-size: 18px;
+	}
+	#button {
+		padding: 10px;
+	}
+	.pass {
+		clear: left;
+		display: block;
+	}
+	#me {
+		float: none;
+		text-align: center;
+		margin: 0 auto 20px;
+		display: block;
+	}
+}
+
+@media (max-width: 400px) {
+	#fullGallery h1 {
+		padding: 10px;
+		font-size: 16px;
+	}
+	#contact #mail, #contact #git {
+		padding: 0;
+	}
+}
+
+@media (max-width: 400px) {
+	#contact #mail, #contact #git {
+		display: none;
+	}	
+}
